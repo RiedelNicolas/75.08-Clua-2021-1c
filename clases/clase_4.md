@@ -38,7 +38,7 @@ Las ventanas fue un desarrollo del MIT sobre Unix.
 * Los recursos del sitema son administrados por el Kernel.
     * Memoria
     * Procesos
-    * Concurrencia.
+    * Concurrencia
 * Todos los procesos se comunican con el kernel mediante System Calls
 * File System, es una estructura jerárquica agrupada por directorio.
 * Todo en Unix son archivos, directorios, terminales, dispositivos de I/O.

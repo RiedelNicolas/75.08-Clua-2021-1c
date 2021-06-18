@@ -23,7 +23,7 @@
 
 * la ejecución se da siempre el path absoluto desde donde estoy parado. ./ es el directorio actual, por eso es necesario para ejecutar.
 
-* Ejecucion background con proceso hijo.
+* Ejecución background con proceso hijo.
   * Se hace con el caracter &, eg: script1.sh&.
   * comando "ps" * -> vemos que comandos se estan ejecutando.
   * si hacemos punto espacio al principio, ejecutamos en background pero sin proceso hijo.
@@ -36,7 +36,6 @@
   * PS1  -> Promp 1.
   * PATH -> Directorios donde buscar ejecutables
 
-
 * Para personalizar el ambiente y evitar acciones repetitivas (no tener que redefinir variables todo el tiempo) existen los .profile y los .bash_profile -> que son archivos de personificación, que se ejecutan siempre que nos logeemos con un usuario.
   * Se encuentra en el %HOME del usuario y contiene el seteo de acciones a ejecutar por el shell al momento de conexion. -> Ojo, si rompemos esto puede ser que nunca mas volvamos a poder conectar con este usuario!
 
@@ -44,7 +43,6 @@
   * RELEER TODA ESA DIAPO, ME COLGUE MIRANDO TIK TOKS.
 
   Basicamente es como tener distintos scopes, con export mandamos todo como al scope padre o algo asi.
-
 
 
 --- Ahi termina la primera parte de scripting.
