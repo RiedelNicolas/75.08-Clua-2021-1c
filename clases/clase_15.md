@@ -1,5 +1,5 @@
 ### Working Set
-La clase anterior fue de memoria virtual parece.<br>
+La clase anterior fue de memoria virtual.<br>
 Los programas exhiben un comportamiento conocido como localidad de referencia.
 En cada fase de su ejecución, el proceso referencia solo a un pequeño numero de paginas.(no precisamente continuas) A este conjunto se lo conoce como Working Set, el Working Set va cambiando a medida que progresa la ejecución.
 
@@ -30,4 +30,4 @@ El paginado interactuá con la I/O.<br>
 Se deben fijar las paginas donde hay transferencia desde memoria secundaria.<br>
 Los archivos pueden accederse como memoria virtual... Esto se ve en la clase de archivos.
 
-Ahora va a dar un ejercicio.
+LA SEGUNDA MITAD DE LA CLASE DIO UN EJERCICIO DE REGEX.
