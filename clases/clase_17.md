@@ -152,4 +152,3 @@ P6:
     <ejecutar>
 ```
 La razón por la cual hay que meter un semáforo mas la desconozco.
-
