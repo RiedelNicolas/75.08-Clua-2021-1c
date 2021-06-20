@@ -111,7 +111,7 @@ P5:
 
 No es tan preocupante el tema parece ...
 
-Ahora Osvaldo mete una variante, donde saliendo del ultimo circulito metemos un P6 también. No entiendo porque esto genera que tengamos que tener mas semáforos : 
+Ahora Osvaldo mete una variante (La mete en el grafico de una), donde saliendo del ultimo circulito metemos un P6 también. No entiendo porque esto genera que tengamos que tener mas semáforos : 
 
 ![Estamos en esa](capturas/ejSemaforo5.png)
 
