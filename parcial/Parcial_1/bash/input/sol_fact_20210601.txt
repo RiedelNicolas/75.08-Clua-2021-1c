@@ -1,0 +1,12 @@
+agua,123,100,bsas,lunes
+agua,789,100,caba,lunes
+gas,666,100,bsas,lunes
+agua,456,100,cord,lunes
+agua,111,100,caba,lunes
+gas,777,100,caba,lunes
+gas,123,100,bsas,lunes
+gas,025,100,cord,lunes
+luz,158,100,peru,lunes
+luz,169,100,bsas,lunes
+luz,123,100,bolivia,lunes
+caca,111,100,bsas,lunes
