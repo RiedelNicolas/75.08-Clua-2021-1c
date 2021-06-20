@@ -16,4 +16,4 @@ while [ ! $num -eq $$ ]; do
     i=$((i++))
 done
 
-echo -e "Adivinaste el Process ID, en $i"
+echo -e "Adivinaste el Process ID, en $i intentos"
