@@ -4,4 +4,4 @@
 * El 10b esta turbio.
 * Rangos de números? como el de canciones.
 
-#### Notas que saco de hacer la guia de ejercicios :
+#### Notas que saco de hacer la guia de ejercicios ***carita fachera facherita*** :
