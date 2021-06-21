@@ -1,0 +1,5 @@
+Juan Perez:9.3212
+Juan Paso:3.3213
+Matias Perez:7.5344
+Fernando Poso:7.999
+Nicolas Riedel:9.999
