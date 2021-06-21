@@ -60,7 +60,7 @@ sed 80s/a/B/
  **mm/dd/aaaa** y se desea cambiarle el formato al siguiente : **dd/mm/aaaa** .
  
  ```sh
- sed 's-\([0-1][0-9]\)/\([0-3][0-9]\)/\([0-9])\{4}\)-\2/\1/\3-g'
+ sed 's-\([0-1][0-9]\)/\([0-3][0-9]\)/\([0-9])\{4\}\)-\2/\1/\3-g'
  ```
 
  Contra barra y paréntesis sirven para agrupar, para eso se necesita la contrabarra.

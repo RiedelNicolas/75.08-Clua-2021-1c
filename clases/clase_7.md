@@ -26,4 +26,4 @@ es un redireccionamiento espeial donde la salida de un comando se redirecciona c
 * (') Evita toda acción del shell hasta la próxima '
 * Agrupamiento, Tanto como "como  ' producen el efecto de agrupamiento de parámetros. Lo hacen ver todo como uno.
 
-### Despues dio cosas de sheel scripts que ya estan en mi resumen goood.
+### Después dio cosas de sheel scripts que ya están en mi resumen GOD.

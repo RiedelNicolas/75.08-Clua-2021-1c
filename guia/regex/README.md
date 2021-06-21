@@ -12,8 +12,11 @@ Dejo aca un [tutorial  ***fachero facherito***](https://www.geeksforgeeks.org/se
 * Parece que para que ande el + lo debemos proteger con backslash.
 * Si queremos agregar algo al final podemos sustituir con $.
 * Aca el or adentro de conjuntos se hace con [].
-* Como referenciar nested groups 
+* Como referencias nested groups.
 
 <br>
 
 ![nested grupos ](nestedGroups.jpeg)
+
+
+Por ultimo hay un link medio rancio pero tiene cosas copadas https://www.rexegg.com/regex-quickstart.html.
