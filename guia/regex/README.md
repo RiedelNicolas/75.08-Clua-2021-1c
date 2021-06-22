@@ -11,12 +11,25 @@ Dejo aca un [tutorial  ***fachero facherito***](https://www.geeksforgeeks.org/se
 * Haciendo -n lo corremos en quiet, pero agregando el parametro p al final imprimimos las lineas que editamos con la sustitución de sed.
 * Parece que para que ande el + lo debemos proteger con backslash.
 * Si queremos agregar algo al final podemos sustituir con $.
-* Aca el or adentro de conjuntos se hace con [].
+* En lugar de representar rangos puedo usar el conjunto -> [].
 * Como referencias nested groups.
+* Para hacer el or ahi si lo tengo que hacer en groups.
+* El operador ? tambien debe estar predecido por un backslash.
 
+ ```
+ $ grep "^ID.*\(ETS\|FBS\)" my_file.txt
+```
+
+O tenemos este or magico tambien
+```
+grep '\([abc]\|[0-9]\)d'
+
+```
 <br>
 
 ![nested grupos ](nestedGroups.jpeg)
 
+Una forma de usar el grep para el caso que no matchee es inviertiendolo tambien (-v).
+![tipoParcial](ejTipoParcial.png)
 
 Por ultimo hay un link medio rancio pero tiene cosas copadas https://www.rexegg.com/regex-quickstart.html.

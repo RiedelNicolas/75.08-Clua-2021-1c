@@ -1,0 +1,1 @@
+echo -e "Codigo de cliente $1 contrato la senal $2 "
