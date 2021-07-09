@@ -104,8 +104,8 @@ Dice Adrián que no es necesario saberlos ya que varia mucho en los distintos **
 ##### Ejercicio:  
 Desarrollar el script comparador.sh que reciba por parámetro un numero de 3 cifras y muestre por stdout el mensaje : 
 * "es 500" Si el numero ingresado es 500.
-* nada, si no hay numero ingresado.
-(solo se puede usar grep y sed)
+* Nada, si no hay numero ingresado.
+ (solo se puede usar grep y sed)
 
 La solución seria : 
 
@@ -117,7 +117,7 @@ si queremos que funcione solo para 500, (ejemplo que dio Adrián en clase)
 ```sh
 sed 's/500/Es 500/'
 ```
-ahora si queremos hacerlo con una variable recibida por parametro : 
+Ahora si queremos hacerlo con una variable recibida por parámetro : 
 
 numero=$1
 echo $numero | sed 's/500/Es 500'
