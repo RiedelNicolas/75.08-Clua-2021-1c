@@ -20,7 +20,7 @@ Dejo aca un [tutorial  ***fachero facherito***](https://www.geeksforgeeks.org/se
  $ grep "^ID.*\(ETS\|FBS\)" my_file.txt
 ```
 
-O tenemos este or magico tambien
+O tenemos este or mágico también
 ```
 grep '\([abc]\|[0-9]\)d'
 
