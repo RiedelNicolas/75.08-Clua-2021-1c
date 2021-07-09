@@ -122,4 +122,4 @@ Ahora si queremos hacerlo con una variable recibida por parámetro :
 numero=$1
 echo $numero | sed 's/500/Es 500'
 
-Podemos agregar la opción -n para no imprimir las que no tengan 500, agregando la opción p al final.
+Podemos agregar la opción -n para no imprimir las que no tengan 500, agregando la opción p al final.  **Con esto solo imprimís las cosas que se reemplazan**
