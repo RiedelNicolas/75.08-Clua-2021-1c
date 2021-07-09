@@ -1,4 +1,4 @@
-#### Seguimos con regex, clase 10 ya....
+#### Seguimos con regex....
 
 sed -> stream editor <br>
 Ejecuta comandos sobre cada linea en la entrada o del archivo pasado como parámetro.
@@ -8,10 +8,10 @@ Los comandos mas usados son :
 * a : Agregar.
 * i : Insertar.
 * d : Borrar.
-* S : Sustituir.
+* s : Sustituir.
 
-El comportamiento por defecto del sed es recorrer todas las lineas de izquierda a derecha.
-(Si no agregamos ningún comportamiento).
+El comportamiento por defecto de `sed` es recorrer todas las lineas de izquierda a derecha.
+(Si no agregamos ningún comportamiento extra).
 
 ##### **Sustitución** : 
 
@@ -22,7 +22,7 @@ Ejemplo de uso :
 ```sh
 sed s/busqueda/sustitucion/ lista_archivos
 ```
-El carácter que sigue al comando s queda a criterio del usuario, pero debe ser el mismo que separe el patron de búsqueda que al de sustitución.
+El carácter que sigue al comando s queda a criterio del usuario, pero debe ser el mismo que separe el patrón de búsqueda que al de sustitución.
 
 ejemplo : 
 
@@ -45,7 +45,7 @@ Se puede modificar el comportamiento por defecto
 ```sh
 sed s/find/replace/g
 ```
-***g*** es un modificador, y siempre va al final del comando.
+***g*** es un modificador, y siempre va al final del comando. Entonces esto genera que reemplacemos todas las ocurrencias en la linea y no solo la primera.
 
 * Para sustituir en algunas lineas hay 2 opciones : 
 * Direccionamiento explicito por numero de linea 
@@ -57,7 +57,7 @@ sed 80s/a/B/
 
  ###### Sustitución con referencia. 
  Se tiene un archivo de texto en el que aparecen las fechas con el siguiente formato : 
- **mm/dd/aaaa** y se desea cambiarle el formato al siguiente : **dd/mm/aaaa** .
+ **mm/dd/aaaa** y se desea cambiarle el formato al siguiente : **dd/mm/aaaa**.
  
  ```sh
  sed 's-\([0-1][0-9]\)/\([0-3][0-9]\)/\([0-9])\{4\}\)-\2/\1/\3-g'
@@ -87,18 +87,18 @@ Básicamente insertamos algo antes de encontrarnos con la coincidencia.
 
 ##### Comando append
 
-* El comportamiento del append es mostrar por salida estandar la linea del archivo original que tiene la ocurrencia y luego la linea que se le pasa por terminal.
+* El comportamiento del append es mostrar por salida estándar la linea del archivo original que tiene la ocurrencia y luego la linea que se le pasa por terminal.
 
 (Muy similar al insert pero cambia el orden)
 
 
 ##### Comando delete
 
-* Elimina las lineas que cumplen la condición, no esta en las slides pero lo podemos usar.
+* Elimina las lineas que cumplen la condición, no esta en las diapositivas pero lo podemos llegar a usar.
 
 ##### Distintas opciones de sed : 
-* g buscamos todas las ocurrencias, no nos quedamos solo en la primera.<br>
-Dice Adrián que no es necesario saberlos ya que varia mucho en distintos SO y las cosas que nos dan estas opciones se pueden implementar de otras formas.
+* **g** buscamos todas las ocurrencias, no nos quedamos solo en la primera.<br>
+Dice Adrián que no es necesario saberlos ya que varia mucho en los distintos **SO** y las cosas que nos dan estas opciones se pueden implementar de otras formas.
 
 
 ##### Ejercicio:  
@@ -123,4 +123,3 @@ numero=$1
 echo $numero | sed 's/500/Es 500'
 
 Podemos agregar la opción -n para no imprimir las que no tengan 500, agregando la opción p al final.
-
