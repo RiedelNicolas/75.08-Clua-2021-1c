@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 echo -e "La tabla de $1 es : "
 
 for i in {1..10}; do

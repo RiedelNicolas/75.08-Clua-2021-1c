@@ -39,6 +39,7 @@ Las ER no forman parte del shell, si vamos a utilizar comandos que reciben ERs c
 * ?: El carácter anterior tenga como máximo una ocurrencia. (1 o ninguna)
 * \*, El carácter anterior se podría repetir todas las veces que quiera. Incluyendo la ocurrencia nula.
 * \\{x, y\\} Que el carácter anterior se repita entre **x** e **y** veces.
+* + el carácter anterior tiene una o mas repeticiones. 
 ##### De conjuntos :
 * [] inicio y fin de conjuntos.
 * - rango dentro del conjunto.

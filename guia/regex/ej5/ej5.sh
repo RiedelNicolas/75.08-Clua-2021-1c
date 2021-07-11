@@ -1,7 +1,8 @@
 #!/bin/bash
 
+# Recibe un email y dice si es valido o no.
 # grep devuelve vacio si no hubo ocurrencia.
-line=$( echo $1 | grep '.\+@.*\..\+')
+line=$( echo $1 | grep '^.\+@[^\.]\+\..\+$')
 echo "$line" | sed -n "s|.\+|es valido|p"
 echo "$line" | sed -n "s|^$|no es valido|p"
 

@@ -1,8 +1,4 @@
-##### Ejercicios que quedaron sin hacer :
-* El ejercicio 6 esta medio precario.
-* El 8 esta sin hacer.
-* El 10b esta turbio.
-* Rangos de números? como el de canciones.
+##### El ejercicio 8 quedo sin hacer, me pareció una paja.
 
 Dejo aca un [tutorial  ***fachero facherito***](https://www.geeksforgeeks.org/sed-command-in-linux-unix-with-examples/)
 #### Notas que saco de hacer la guia de ejercicios ***carita fachera facherita*** :
@@ -16,12 +12,12 @@ Dejo aca un [tutorial  ***fachero facherito***](https://www.geeksforgeeks.org/se
 * Para hacer el or ahi si lo tengo que hacer en groups.
 * El operador ? tambien debe estar predecido por un backslash.
 
- ```
+ ```sh
  $ grep "^ID.*\(ETS\|FBS\)" my_file.txt
 ```
 
 O tenemos este or mágico también
-```
+```sh
 grep '\([abc]\|[0-9]\)d'
 
 ```
@@ -32,4 +28,4 @@ grep '\([abc]\|[0-9]\)d'
 Una forma de usar el grep para el caso que no matchee es inviertiendolo tambien (-v).
 ![tipoParcial](ejTipoParcial.png)
 
-Por ultimo hay un link medio rancio pero tiene cosas copadas https://www.rexegg.com/regex-quickstart.html.
+Por ultimo hay un link medio rancio pero tiene cosas copadas https://www.rexegg.com/regex-quickstart.html
