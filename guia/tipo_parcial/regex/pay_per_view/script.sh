@@ -12,9 +12,10 @@
 readonly tel=$1
 readonly codigo=$2
 readonly canal=$3
-
-codigo_area="$(echo $tel | sed 's|^.\{5\}\(.\{6\}\).*$|\1|')"
-senal="$(grep "^[^;]*;[^;]*;[^;]*;${codigo_area};${canal};[^;]*$" "signals&channels.dat" | sed 's|^[^;]*;\([^;]*\);.*$|\1|')"
+#(nn)(nnnnnn)nnnn
+codigo_area="$(echo $tel | sed 's|^([0-9]\{2\})(\([0-9]\{6\}\))[0-9]\{4\}$|\1|')"
+#senal="$(grep "^[^;]*;[^;]*;[^;]*;${codigo_area};${canal};[^;]*$" "signals&channels.dat" | sed 's|^[^;]*;\([^;]*\);.*$|\1|')"
+senal="$(sed -n "s|^[^;]*;\([^;]*\);[^;]*;${codigo_area};${canal};[^;]*$|\1|p" < "signals&channels.dat")"
 bash "registrarVenta.sh" $codigo $senal
 
 # Este esta bien planteado.
