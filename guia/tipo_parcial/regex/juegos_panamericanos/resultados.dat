@@ -1,6 +1,5 @@
-ARG;Argentina;asdas;Tiro;N;S;N;N;asd
-CHI;Chile;asdas;Esgrima;N;S;N;N;asd
-URU;Uruguay;dasdf;Futbol;S;N;N;N;asd
-COL;Colombia;asfas;Tenis;N;N;S;N;asd
-ARG;Argentina;asdfa;Ajedrez;S;N;N;S;asd
-ARG;Argentina;asdafas;Bocha;N;N;N;N;asd
+1;argentina;1;badminton;asd;S;N;N;S;asd
+2;brasil;2;futbol;asd;N;N;S;N;asd
+3;uganda;3;basket;asd;S;N;N;S;asd
+4;portugal;1;badminton;asd;N;S;N;N;asd
+5;egipto;1;badminton;asd;N;N;S;N;asd

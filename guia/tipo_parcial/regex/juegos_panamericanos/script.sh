@@ -1,14 +1,11 @@
-#Recibe, pais, disciplina, y muestre por salida standard si recibio o no una medalla.
+#Recibe, pais, disciplina, y muestre por salida estandar si recibio o no una medalla.
 #!/bin/bash
 # Robado a gonzi.
 pais=$1
 disciplina=$2
-
 #linea="$(grep "^.*;$pais;.*;$disciplina;.*;.*;.*;.*;.*;.*$" resultados.dat)"
-linea="$(grep ".*" resultados.dat)"
-echo $linea
-#echo $linea | sed -n "s|^.*;S;N;N;.*;.*$|$pais obtuvo una medalla de oro en $disciplina|p"
-#echo $linea | sed -n "s|^.*;N;S;N;.*;.*$|$pais obtuvo una medalla de plata en $disciplina|p"
-#echo $linea | sed -n "s|^.*;N;N;S;.*;.*$|$pais obtuvo una medalla de bronce en $disciplina|p"
-#echo $linea | sed -n "s|^.*;N;N;N;.*;.*$|$pais no obtuvo ninguna medalla en $disciplina|p"
-#o por ahi matchear con NO NO NO?
+#Ojo con esto, porque el grep te devuelve todos los match en una unica linea.
+sed -n "s|^[^;]*;${pais};[^;]*;${disciplina};[^;]*;S;N;N;[SN];[^;]*$|$pais obtuvo una medalla de oro en $disciplina|p" < resultados.dat
+sed -n "s|^[^;]*;${pais};[^;]*;${disciplina};[^;]*;N;S;N;[SN];[^;]*$|$pais obtuvo una medalla de plata en $disciplina|p" < resultados.dat
+sed -n "s|^[^;]*;${pais};[^;]*;${disciplina};[^;]*;N;N;S;[SN];[^;]*$|$pais obtuvo una medalla de bronce en $disciplina|p" < resultados.dat
+sed -n "s|^[^;]*;${pais};[^;]*;${disciplina};[^;]*;N;N;N;[SN];[^;]*$|$pais no obtuvo ninguna medalla en $disciplina|p" < resultados.dat
