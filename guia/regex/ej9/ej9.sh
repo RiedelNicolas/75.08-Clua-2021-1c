@@ -10,3 +10,5 @@ echo $1 | grep "^[1-5][0-9]:[0-5][0-9]:[0-5][0-9]$" | sed -n "s|.\+|Es valido|p"
 echo $1 | grep "^00:03:1[1-2]$" | sed -n "s|.\+|Es invalido|p"
 echo $1 | grep "^00:03:0[0-9]$" | sed -n "s|.\+|Es invalido|p"
 echo $1 | grep "^00:0[0-2]:[0-5][0-9]$" | sed -n "s|.\+|Es invalido|p"
+
+#Quedo de perla
