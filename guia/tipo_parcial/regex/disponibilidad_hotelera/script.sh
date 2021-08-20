@@ -12,8 +12,8 @@
 #Fecha (formato mm/aa/aaaa)•
 #Estado el estado disponible tiene como valor 'DISP'
 
-read linea
+linea=$(grep ".*")
 huespedes=$(echo "$linea" | sed "s|^\([^,]*\),[^,]*$|\1|g")
 estrellas=$(echo "$linea" | sed "s|^[^,]*,\([^,]*\)$|\1|g")
 
-grep  "^[^-]*-[^-]*-${estrellas}-[^-]*-${huespedes}-17/02/2013-DISP$" < disponibilidad.dat | wc -l
+grep  "^[^-]*-[^-]*-${estrellas}-[^-]*-${huespedes}-17/02/2013-DISP$" "disponibilidad.dat" | wc -l
